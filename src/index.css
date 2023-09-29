@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Mulish:ital@1&family=Poppins&family=Raleway&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+
+
+}
+
+.title {
+    font-size: 3rem;
+    border: 7px dashed rgb(1,17,160);
+    border-radius: 20px;
+    padding: 1vh 5vw;
+    margin: 6vh;
+}
+
+.cardsContainer{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.cityImage{
+    width: 380px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.card{
+     width: 400px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    align-items:center ;
+    box-shadow: rgb(0,0,0,0.24) 0 3px 8px; 
+}
+
+.tourInfo {
+    margin: 20px 5px;
+  }
+  
+  .tourPrice {
+    color: #1faa59;
+    font-size: 1.3rem;
+  }
+  
+  .tourPrice::before {
+    content: "₹ ";
+  }
+  
+  .tourCityName {
+    font-size: 1.5rem;
+  }
+  
+  .readMore {
+    color: #12b0e2;
+    cursor: pointer;
+  }
+  .notIntrestedBtn{
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #b4161b21;
+    padding: 10px 80px;
+    font-size: 18px;
+    border: 1px solid #b4161b;
+    font-weight: bold;
+    margin-top: 18px;
+
+  }
+  .notIntrestedBtn:hover{
+    background-color:red;
+    color: white;
+    transition: all 0.4s;
+  }
+  .refresh{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  .refresh h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  .refreshBtn {
+    border: 1px solid #fff;
+    cursor: pointer;
+    margin-top: 18px;
+    padding: 10px 80px;
+  }
+
+
+  
+  
